@@ -31,4 +31,4 @@ transaction = {
 }
 signed = w3.eth.account.sign_transaction(transaction, key)
 signed.rawTransaction
-w3.eth.send_raw_transaction(signed.rawTransaction)
+print(w3.eth.send_raw_transaction(signed.rawTransaction))
